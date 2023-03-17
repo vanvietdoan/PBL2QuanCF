@@ -20,15 +20,15 @@
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txbUserName.Text =="Doan Van Viet" && txbPassWord.Text =="12345") { 
+           // if (txbUserName.Text =="Doan Van Viet" && txbPassWord.Text =="12345") { 
                 fTableManager a = new fTableManager(); ;
                 this.Hide();
                 a.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Sai Mật Khẩu");
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Sai Mật Khẩu");
+            //  }
            // this.Show();
         }
 

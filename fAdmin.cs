@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PBL2QuanCF.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -963,28 +964,24 @@ namespace PBL2QuanCF
 
         private void fAdmin_Load(object sender, EventArgs e)
         {
-            cnn = new SqlConnection(str);
-            cnn.Open();
-           
-            LoadAccountList();
-        }
-        SqlConnection cnn;
-        SqlCommand cnd;
-        string str = @"Data Source=DESKTOP-2Q7653F\MSSQLSERVERD;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
-        SqlDataAdapter adapter = new SqlDataAdapter();
-        DataTable table = new DataTable();
 
-        void LoadAccountList()
+            LoadAccountlist();
+            LoadFoodlist();
+        }
+        void LoadAccountlist()
         {
-            cnd = cnn.CreateCommand();
-            cnd.CommandText = "select * from dbo.Account";
-            adapter.SelectCommand = cnd;
-            table.Clear();
-            adapter.Fill(table);
-
-            dtv_Account.DataSource = table;
+            dtv_Account.DataSource = DataProvider.Instacne.ExecuteQuery("select * from dbo.Account");
 
         }
+        void LoadFoodlist()
+        {
+            dtv_food.DataSource = DataProvider.Instacne.ExecuteQuery("select * from dbo.Food");
+
+        }
+
+
+
+
 
         private void dtv_Account_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

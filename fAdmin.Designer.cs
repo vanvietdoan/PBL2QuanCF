@@ -114,7 +114,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dtv_food = new System.Windows.Forms.DataGridView();
             this.panel20 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -187,7 +187,7 @@
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_food)).BeginInit();
             this.panel20.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1088,22 +1088,22 @@
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.dataGridView3);
+            this.panel19.Controls.Add(this.dtv_food);
             this.panel19.Location = new System.Drawing.Point(6, 84);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(412, 328);
             this.panel19.TabIndex = 1;
             this.panel19.Paint += new System.Windows.Forms.PaintEventHandler(this.panel19_Paint);
             // 
-            // dataGridView3
+            // dtv_food
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 25;
-            this.dataGridView3.Size = new System.Drawing.Size(406, 322);
-            this.dataGridView3.TabIndex = 0;
-            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            this.dtv_food.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtv_food.Location = new System.Drawing.Point(3, 3);
+            this.dtv_food.Name = "dtv_food";
+            this.dtv_food.RowTemplate.Height = 25;
+            this.dtv_food.Size = new System.Drawing.Size(406, 322);
+            this.dtv_food.TabIndex = 0;
+            this.dtv_food.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // panel20
             // 
@@ -1486,7 +1486,7 @@
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             this.panel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_food)).EndInit();
             this.panel20.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
@@ -1596,7 +1596,7 @@
         private TextBox textBox3;
         private Label label8;
         private Panel panel19;
-        private DataGridView dataGridView3;
+        private DataGridView dtv_food;
         private Panel panel20;
         private Button button3;
         private Button button4;
