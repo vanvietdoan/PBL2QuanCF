@@ -85,15 +85,6 @@
             // 
             // label2
             // 
-B
-            //label2.AutoSize = true;
-            //label2.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            //label2.Location = new Point(5, 9);
-            //label2.Name = "label2";
-            //label2.Size = new Size(75, 24);
-            //label2.TabIndex = 0;
-            //label2.Text = "Pass1:";
-=======
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(4, 7);
@@ -101,7 +92,6 @@ B
             this.label2.Size = new System.Drawing.Size(62, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "Pass2:";
-master
             // 
             // btnLogin
             // 
@@ -115,24 +105,12 @@ master
             // 
             // btnExit
             // 
-B
-            btnExit.BackColor = Color.FromArgb(255, 128, 128);
-            btnExit.Location = new Point(329, 149);
-            btnExit.Margin = new Padding(3, 4, 3, 4);
-            btnExit.Name = "btnExit";
-            btnExit.Size = new Size(109, 36);
-            btnExit.TabIndex = 5;
-            btnExit.Text = "Thoát";
-            btnExit.UseVisualStyleBackColor = false;
-            btnExit.Click += btnExit_Click;
-=======
-            //this.btnExit.Location = new System.Drawing.Point(288, 112);
-            //this.btnExit.Name = "btnExit";
-            //this.btnExit.Size = new System.Drawing.Size(95, 27);
-            //this.btnExit.TabIndex = 5;
-            //this.btnExit.Text = "Thoát";
-            //this.btnExit.UseVisualStyleBackColor = true;
- master
+            this.btnExit.Location = new System.Drawing.Point(288, 112);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(95, 27);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // fLogin
             // 
