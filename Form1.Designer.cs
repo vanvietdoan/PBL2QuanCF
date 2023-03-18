@@ -94,9 +94,9 @@
             label2.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(5, 9);
             label2.Name = "label2";
-            label2.Size = new Size(113, 24);
+            label2.Size = new Size(75, 24);
             label2.TabIndex = 0;
-            label2.Text = "Mật Khẩu:";
+            label2.Text = "Pass1:";
             // 
             // btnLogin
             // 
@@ -112,13 +112,14 @@
             // 
             // btnExit
             // 
+            btnExit.BackColor = Color.FromArgb(255, 128, 128);
             btnExit.Location = new Point(329, 149);
             btnExit.Margin = new Padding(3, 4, 3, 4);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(109, 36);
             btnExit.TabIndex = 5;
             btnExit.Text = "Thoát";
-            btnExit.UseVisualStyleBackColor = true;
+            btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
             // fLogin
