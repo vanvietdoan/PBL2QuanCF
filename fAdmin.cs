@@ -965,30 +965,16 @@ namespace PBL2QuanCF
         private void fAdmin_Load(object sender, EventArgs e)
         {
 
-            LoadAccountlist();
-            LoadFoodlist();
+            
         }
-        void LoadAccountlist()
-        {
-            dtv_Account.DataSource = DataProvider.Instacne.ExecuteQuery("select * from dbo.Account");
-
-        }
-        void LoadFoodlist()
-        {
-            dtv_food.DataSource = DataProvider.Instacne.ExecuteQuery("select * from dbo.Food");
-
-        }
-
+       
 
 
 
 
         private void dtv_Account_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int i;
-            i = dtv_Account.CurrentRow.Index;
-            txb_TenTaiKhoan.Text = dtv_Account.Rows[i].Cells[0].Value.ToString();
-            txb_MatKhau.Text = dtv_Account.Rows[i].Cells[1].Value.ToString();
+            
         }
     }
 }

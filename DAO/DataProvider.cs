@@ -11,7 +11,7 @@ namespace PBL2QuanCF.DAO
     public class DataProvider
     {
         private static DataProvider instacne;
-        private string connet = @"Data Source=DESKTOP-2Q7653F\MSSQLSERVERD;Initial Catalog=QLQCF;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connet = @"Data Source=DESKTOP-2Q7653F\MSSQLSERVERD;Initial Catalog=QuanLyQuanCafe;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public static DataProvider Instacne
         {
@@ -36,8 +36,12 @@ namespace PBL2QuanCF.DAO
                     int i = 0;
                     foreach (string item in listPara)
                     {
-                        cnd.Parameters.AddWithValue(item, parameter[i]);
-                        i++;
+                        if (item.Contains('@'))
+                        {
+                            cnd.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                        
                     }
 
                 }
@@ -62,8 +66,11 @@ namespace PBL2QuanCF.DAO
                     int i = 0;
                     foreach (string item in listPara)
                     {
-                        cnd.Parameters.AddWithValue(item, parameter[i]);
-                        i++;
+                        if (item.Contains('@'))
+                        {
+                            cnd.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
                     }
                 }
                 data= cnd.ExecuteNonQuery();    
@@ -84,8 +91,11 @@ namespace PBL2QuanCF.DAO
                     int i = 0;
                     foreach (string item in listPara)
                     {
-                        cnd.Parameters.AddWithValue(item, parameter[i]);
-                        i++;
+                        if (item.Contains('@'))
+                        {
+                            cnd.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
                     }
                 }
                 data = cnd.ExecuteScalar();
